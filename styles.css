@@ -1,0 +1,122 @@
+/* Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%) */
+
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(0, 0%, 59%);
+}
+.container {
+    background: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.svg-top {
+    position: fixed;
+    top: -100%;
+    right: 50%;
+}
+
+.svg-bottom {
+    position: fixed;
+    left: 50%;
+    bottom: -100%;
+}
+
+.card {
+    min-width: 350px;
+    max-width: 350px;
+    background: white;
+    border-radius: 1rem;
+    z-index: 10;
+    
+}
+.card-bg {
+    position: relative;
+    border-radius: 1rem 1rem 0 0;
+    
+}
+.card-bg img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-image {
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card-image img {
+    display: block;
+    position: fixed;
+    border: 5px solid white;
+    border-radius: 50%;
+    top: 30%;
+}
+
+
+.card-data {
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.card-data h1 {
+    font-size: 1.5rem;
+}
+.card-data h1, h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.card-data span {
+    color: hsl(0, 0%, 59%);
+}
+
+
+
+.card-nums ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.card-nums ul li {
+    min-width: 90px;
+}
+.card-nums ul li span {
+    font-size: 1rem;
+}
+
+
+.attribution {
+    color: #aaa;
+    font-family: "Lexend Deca", sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .attribution a {
+    color: #006970;
+    text-decoration: none;
+    opacity: .6;
+  }
